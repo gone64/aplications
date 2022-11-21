@@ -33,6 +33,7 @@ class MainActivity2 : AppCompatActivity() {
             }
             else if((mail.text.toString().isNotEmpty()) && (pass.text.toString().isNotEmpty().equals(rpass.text.toString().isNotEmpty()))){
                     Toast.makeText(this, "წარმატებით დარეგისტრირდით!", Toast.LENGTH_SHORT).show()
+                crtacc.setTextColor(getColor(R.color.purple_700))
             }
 
             else if (pass.text.toString().isEmpty() or rpass.text.toString().isEmpty()){
